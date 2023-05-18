@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+
+
+:root{
+--scampi: #666CA3;
+--black:  #13183F;
+--waterloo: #83869A;
+--violet-red: #F74780;
+--carnation-pink : #FFA6C9;
+--white : #FFFFFF;
+--linear-gradient: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+
+button{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    border: none;
+    width:16.7rem;
+    height: 5.6rem;
+    cursor: pointer;
+    
+}
+
+
+button:hover{
+    opacity: 50%;
+    
+}
+
+.padding-body{
+    padding-right: 3.9rem;
+    padding-left: 3.9rem;
+}
+
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+
+header .container .logo{
+    margin-top: 3.8rem;
+}
+
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button{
+    margin-top: 2.4rem;
+    background-color: var(--black);
+    border-radius: 28px;
+   
+}
+
+nav button:hover{
+    opacity: 50%;
+}
+
+header .container .banner{
+    margin-top: 18.5rem;
+}
+
+.banner .text h1{
+    font-size: 5.6rem;
+    font-weight: 800;
+    max-width: 457px;
+    
+}
+
+ .banner .text p{
+    font-size: 1.8rem;
+    max-width: 445px;
+    line-height: 2.8rem;
+    margin-top: 2.9rem;
+    margin-bottom: 4rem;
+}
+
+.banner .text button{
+    
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.8px;
+
+}
+
+
+.banner .image-hero{
+    position: absolute;
+    z-index: -1;
+    top:-140px;
+    right:-270px;
+}
+
+.banner .image-hero-mobile{
+    display: none;
+}
+
+.courses .container{
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+    margin-top: 22.6rem;
+    flex-wrap: wrap;
+    
+}
+
+.courses .box{
+  background-color: var(--white);
+  padding: 6.4rem 3.2rem 4rem 3.2rem;
+  filter: drop-shadow(0px 25px 50px hsla(233, 92%, 29%, 0.04));
+  border-radius: 15px;
+  flex-basis: 350px;
+  min-height: 322px;
+  margin-bottom: 8rem;
+  
+  
+}
+
+.courses .box:first-child{
+    
+    background: var(--linear-gradient);
+    
+}
+
+.courses .box:first-child p{
+    color:var(--white);
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 800;
+    
+}
+
+.courses .box img{
+    position: absolute;
+    top:-1.8rem;
+}
+
+.courses .box h2{
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.courses .box p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--waterloo);
+    line-height: 2.8rem;
+    margin-top: 2.4rem;
+    
+}
+
+.courses .box button{
+    background-color: var(--white);
+    color:var(--violet-red);
+    font-weight: 700;
+    position: absolute;
+    bottom: 4rem;
+    width: auto;
+    height: auto;
+    
+}
+
+footer{
+    background: var(--black);
+    padding: 3.2rem 4rem 3.2rem 4rem;
+    margin-top: .6rem;
+    
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer button{
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    border: none;
+    width:16.7rem;
+    height: 5.6rem;
+    border-radius: 28px;
+}
+
+
+
+@media only screen and (max-width: 900px){
+    
+
+
+    button{
+        font-size: 1.6rem;
+    }
+
+    header .container .logo {
+        width: 8.9rem;
+    }
+
+    header .container .banner {
+        margin-top: 10rem;
+    }
+    
+    
+    .banner .text button {
+        width:16.7rem;
+        height: 5.6rem;
+        
+        
+    }
+    
+
+    .banner .text h1 {
+        font-size: 4rem;
+    }
+
+    .banner .text p {
+        font-size: 1.6rem;
+        max-width: 39.8rem;
+        line-height: 2.6rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .courses .container{
+        gap:1rem;
+    }
+
+    .courses .box {
+        padding: 5.6rem 2.2rem 4rem 3.2rem;
+        flex-basis: 340px;
+        min-height: 283px;
+        margin-bottom: 5.6rem;
+        
+    }
+
+    .courses .box:first-child p {
+        
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        
+    }
+
+    .courses .box p {
+        font-size: 1.6rem;
+    }
+
+    .courses .box button {
+        position: absolute;
+        bottom: 3.2rem;
+        
+    }
+
+    footer button{
+        font-size: 1.6rem;
+        width:14rem;
+        height: 4.8rem;
+        border-radius: 28px;
+    }
+
+    footer .logo{
+        max-width: 8.9rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    
+    .padding-body{
+        padding: 0 1.6rem 0 1.6rem;
+    }
+    
+    header .nav button {
+       width: 14rem;
+       height: 4.8rem;
+    }
+
+    header .banner .image-hero-mobile{
+        display: block;
+        max-width: 32.7rem;
+        margin-top: 4.6rem;
+    }
+
+    .courses .container {
+        margin-top: 6.6rem;
+    }
+
+    .courses .box:first-child {
+        min-height: 12rem;
+        padding: 0 2.9rem 3.2rem 2.8rem;
+    }
+
+    .courses .box {
+        padding: 5.6rem 2.2rem 4rem 3.2rem;
+        flex-basis: 340px;
+        min-height: 283px;
+        margin-bottom: 1.6rem;
+    }
+
+    footer{
+        
+        padding: 3.2rem 1.6rem 3.2rem 1.6rem;
+       
+        
+    }
+
+}
